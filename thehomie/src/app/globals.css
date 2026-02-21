@@ -1,0 +1,36 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-graphite: #111111;
+  --color-offwhite: #F8F8F6;
+  --color-slate: #444444;
+  --color-cyan: #00E5FF;
+  --color-amber: #F5A623;
+  --color-green: #2ECC71;
+  --color-red: #E74C3C;
+  --color-background: #F8F8F6;
+  --color-foreground: #111111;
+  --font-sans: "Inter", "SF Pro Display", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--color-offwhite);
+  color: var(--color-graphite);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+::selection {
+  background-color: rgba(0, 229, 255, 0.15);
+  color: var(--color-graphite);
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-cyan);
+  outline-offset: 2px;
+}
